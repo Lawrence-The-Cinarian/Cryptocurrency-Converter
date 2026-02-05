@@ -10,6 +10,8 @@ int main() {
         const double BTC_TO_USDT = 75000; /*BTC TO USDT OR USDT TO ETH*/
         const double ETH_TO_USDT = 2000; /*ETH TO USDT OR USDT TO ETH*/
         const double CN_TO_CUSD = 40000; /*CN TO CUSD OR CUSD TO CN*/
+	const double CN_TO_BTC = 0.53;
+        const double CN_TO_ETH = 20;
 do {
    printf("Welcome to Cinel's Crypto Converter\n");
    printf("Enter Number for Conversion: ");
@@ -24,10 +26,14 @@ do {
    printf("(4) USDT TO ETH\n");
    printf("(5) CN TO CUSD\n");
    printf("(6) CUSD TO CN\n");
+   printf("(7) CN TO ETH\n");
+   printf("(8) ETH TO CN\n");
+   printf("(9) CN TO BTC\n");
+   printf("(10) BTC TO CN\n");
    printf("\n");
    printf("Enter Number for Currency: ");
    scanf("%d", &choice);
-    if(choice <= 0 || choice >= 7) {
+    if(choice <= 0 || choice >= 11) {
    printf("Invalid Input\n");
   return choice;
   }
@@ -49,6 +55,18 @@ do {
         break;
 	case 6:
            output = input / CN_TO_CUSD;
+        break;
+        case 7:
+           output = input * CN_TO_ETH;
+        break;
+       case 8:
+           output = input / CN_TO_ETH;
+        break;
+        case 9:
+           output = input * CN_TO_BTC;
+        break;
+        case 10:
+           output = input / CN_TO_BTC;
         break;
 	default:
 	printf("Invalid Input\n");
