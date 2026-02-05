@@ -10,7 +10,7 @@ int main() {
         const double BTC_TO_USDT = 75000; /*BTC TO USDT OR USDT TO ETH*/
         const double ETH_TO_USDT = 2000; /*ETH TO USDT OR USDT TO ETH*/
         const double CN_TO_CUSD = 40000; /*CN TO CUSD OR CUSD TO CN*/
-	const double CN_TO_BTC = 0.53;
+	    const double CN_TO_BTC = 0.53;
         const double CN_TO_ETH = 20;
 do {
    printf("Welcome to Cinel's Crypto Converter\n");
@@ -56,16 +56,16 @@ do {
 	case 6:
            output = input / CN_TO_CUSD;
         break;
-        case 7:
+    case 7:
            output = input * CN_TO_ETH;
         break;
-       case 8:
+    case 8:
            output = input / CN_TO_ETH;
         break;
-        case 9:
+    case 9:
            output = input * CN_TO_BTC;
         break;
-        case 10:
+    case 10:
            output = input / CN_TO_BTC;
         break;
 	default:
