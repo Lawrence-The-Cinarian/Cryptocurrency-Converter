@@ -13,28 +13,38 @@ int main() {
 	    const double CN_TO_BTC = 0.53;
         const double CN_TO_ETH = 20;
 do {
-   printf("Welcome to Cinel's Crypto Converter\n");
-   printf("Enter Number for Conversion: ");
+   printf("╔═════════════════════════════════════════════════════════╗\n");
+   printf("║            Welcome to Cinel's Crypto Converter          ║\n");
+   printf("║            Enter Number for Conversion: ");
    scanf("%lf", &input);
+   printf("╚═════════════════════════════════════════════════════════╝\n");
     if(input <= 0) {
-   printf("Invalid Input\n");
+   printf("╔═════════════════════════════════════════════════════════╗\n");
+   printf("║                     Invalid Input                       ║\n");
+   printf("╚═════════════════════════════════════════════════════════╝\n");
   }
    printf("\n");
-   printf("(1) BTC TO USDT\n");
-   printf("(2) USDT TO BTC\n");
-   printf("(3) ETH TO USDT\n");
-   printf("(4) USDT TO ETH\n");
-   printf("(5) CN TO CUSD\n");
-   printf("(6) CUSD TO CN\n");
-   printf("(7) CN TO ETH\n");
-   printf("(8) ETH TO CN\n");
-   printf("(9) CN TO BTC\n");
-   printf("(10) BTC TO CN\n");
+   printf("╔═════════════════════════════════════════════════════════╗\n");
+   printf("║                    (1) BTC TO USDT                      ║\n");
+   printf("║                    (2) USDT TO BTC                      ║\n");
+   printf("║                    (3) ETH TO USDT                      ║\n");
+   printf("║                    (4) USDT TO ETH                      ║\n");
+   printf("║                    (5) CN TO CUSD                       ║\n");
+   printf("║                    (6) CUSD TO CN                       ║\n");
+   printf("║                    (7) CN TO ETH                        ║\n");
+   printf("║                    (8) ETH TO CN                        ║\n");
+   printf("║                    (9) CN TO BTC                        ║\n");
+   printf("║                    (10) BTC TO CN                       ║\n");
+   printf("╚═════════════════════════════════════════════════════════╝\n");
    printf("\n");
-   printf("Enter Number for Currency: ");
+   printf("╔═════════════════════════════════════════════════════════╗\n");
+   printf("║            Enter Number for Currency: ");
    scanf("%d", &choice);
+   printf("╚═════════════════════════════════════════════════════════╝\n");
     if(choice <= 0 || choice >= 11) {
-   printf("Invalid Input\n");
+   printf("╔═════════════════════════════════════════════════════════╗\n");
+   printf("║                     Invalid Input                       ║\n");
+   printf("╚═════════════════════════════════════════════════════════╝\n");
   return choice;
   }
    switch(choice) {
@@ -69,7 +79,9 @@ do {
            output = input / CN_TO_BTC;
         break;
 	default:
-	printf("Invalid Input\n");
+   printf("╔═════════════════════════════════════════════════════════╗\n");
+   printf("║                     Invalid Input                       ║\n");
+   printf("╚═════════════════════════════════════════════════════════╝\n");
    }
    printf("Amount: %.9f\n", output);
    printf("\n");
